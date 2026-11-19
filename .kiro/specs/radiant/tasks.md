@@ -1,6 +1,10 @@
-# Plan de implementación · Fase 1
+# Implementation Plan: RADIANT (fase 1)
+
+## Overview
 
 Tareas de la fase 1 (MVP), siguiendo el plan por semanas de `design.md`. Cada tarea indica los requisitos que cubre. Las fases 2 a 4 se desglosarán al cerrar la anterior.
+
+## Tasks
 
 - [ ] 1. Entorno y base del proyecto (semana 1)
   - [ ] 1.1 Crear el repositorio con la estructura de carpetas, `pyproject.toml` y archivo de bloqueo (`uv lock`)
@@ -35,7 +39,7 @@ Tareas de la fase 1 (MVP), siguiendo el plan por semanas de `design.md`. Cada ta
 - [ ] 5. Motor de reglas (semana 5)
   - [ ] 5.1 Criterios de Hanifin-Rajka y UK Working Party, con estado "no evaluable"
   - [ ] 5.2 Fenotipo por prescripciones con umbrales configurables en `configs/thresholds.yaml`
-  - [ ] 5.3 Criterio de derivación a partir de la fuente clínica elegida
+  - [ ] 5.3 Criterio de derivación a partir del borrador pediátrico de `design.md` (bloqueada hasta que un revisor clínico lo valide y se decidan las fuentes)
   - [ ] 5.4 Clasificación de DA diagnosticada (L20) y sospecha de Caso_Objetivo
   - [ ] 5.5 Tests de determinismo y unitarios por criterio
   - _Requisitos: 4_
@@ -62,3 +66,23 @@ Tareas de la fase 1 (MVP), siguiendo el plan por semanas de `design.md`. Cada ta
   - [ ] 8.3 Incorporar los comentarios del revisor clínico
   - [ ] 8.4 Primera versión de la memoria: metodología, limitaciones y gobernanza
   - _Requisitos: 16.1, 16.4, 10.6, 10.7, 10.10_
+
+## Task Dependency Graph
+
+- Tarea 1 (base del proyecto): sin dependencias.
+- Tarea 2 (generador): depende de la 1.
+- Tarea 3 (notas y muestra para revisión): depende de la 2.
+- Tarea 4 (lectura y escritura FHIR): depende de la 2.
+- Tarea 5 (motor de reglas): depende de la 4. La subtarea 5.3 depende además de la validación del criterio de derivación por un revisor clínico.
+- Tarea 6 (API, alertas, auditoría y autenticación): depende de la 5.
+- Tarea 7 (panel web): depende de la 6.
+- Tarea 8 (integración y cierre): depende de las tareas 3, 5, 6 y 7.
+
+Pueden avanzar en paralelo las tareas 3 y 4, y la preparación del proyecto React (7.1) puede empezar antes de terminar la 6.
+
+## Notes
+
+- **Antes de la tarea 5.3:** hace falta que un revisor clínico valide el borrador del criterio de derivación pediátrico (subsección «Borrador del criterio de derivación pediátrico» de `design.md`). También hay que decidir si una comunicación de congreso (GEIDAC) basta como fuente, y datar el documento de SEMERGEN o sustituirlo por el SEMERGEN DoC 2022.
+- **Antes de la tarea 3.4:** conseguir un revisor clínico disponible para la muestra de 20-30 casos.
+- Las condiciones del criterio que dependen de infecciones (D1, D3 y D10) requieren ampliar el generador; hay que decidirlo antes de la tarea 2.
+- Cada tarea debe terminar con sus tests pasando antes de empezar la siguiente.
