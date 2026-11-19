@@ -1,0 +1,20 @@
+# Paquete Python y dependencias de la fase 1.
+# Fija las versiones con `uv lock` y versiona el archivo uv.lock (Req. 16.3).
+[project]
+name = "radiant"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi",
+  "uvicorn",
+  "pydantic",
+  "fhir.resources",
+  "pyyaml",
+  "argon2-cffi",
+  "pandas",
+  "numpy",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "hypothesis", "ruff"]
+# Fase 2: scikit-learn, xgboost, shap. Fase 3: dependencias del RAG.

@@ -1,0 +1,10 @@
+# Excluye datos generados, entornos y secretos
+data/*
+!data/README.md
+!data/DATA_SOURCES.md
+!data/**/.gitkeep
+.venv/
+__pycache__/
+*.pyc
+node_modules/
+.env

@@ -6,10 +6,10 @@ Guía rápida de marca para **atopi.ai**: un estilo tierno, infantil y accesible
 
 ## 1. Concepto
 
-- **Nombre:** atopi.ai (juego con "atopía" + IA).
+- **Nombre:** atopi.ai (juego con "atopiía" + IA).
 - **Símbolo:** una gotita sonriente (cuidado e hidratación de la piel) con una estrellita (la IA).
-- **Personalidad:** cercana, amable, tranquilizadora. Pensada para familias y pediatría.
-- **Lema:** *cuidamos la piel de los peques*.
+- **Personalidad:** cercana, amable y tranquilizadora, con temática infantil. El usuario del panel es el profesional sanitario y el cliente es Sanofi, por lo que dentro del panel se aplica una versión sobria (ver sección 8).
+- **Lema:** *cuidamos la piel de los peques* (solo para materiales de marca y presentaciones; no se usa dentro del panel clínico).
 - **Fondo por defecto:** blanco.
 
 ---
@@ -177,8 +177,19 @@ a { color: var(--atopi-blue); }
 
 ---
 
-## 8. Pendiente antes de usarlo
+## 8. Uso en el panel clínico
+
+El panel lo usan pediatras, médicos de familia y dermatólogos, así que la identidad se aplica con sobriedad:
+
+- Se mantienen la paleta, la tipografía Fredoka, el anillo de foco y los botones de 44 px.
+- La gotita aparece en la cabecera, el inicio de sesión y el favicon. No se usa la cara ni la estrella dentro de tablas, gráficos o alertas.
+- No uses el coral ni el amarillo de la marca como indicadores de gravedad clínica, para no confundirlos con un semáforo. El estado de las alertas se indica con texto e iconos, no solo con color.
+- El aviso "Soporte a la decisión clínica. No constituye un diagnóstico. Datos sintéticos." va siempre visible, en índigo sobre blanco o azul nube.
+- Los gráficos usan índigo, azul intenso y gris texto como colores principales.
+
+## 9. Pendiente antes de usarlo
 
 - Comprobar que el nombre, el dominio `atopi.ai` y los usuarios en redes estén libres.
 - Revisar si existe alguna marca registrada parecida en el sector salud.
 - Si se usa en el reto con Sanofi, confirmar con la mentoría que el nombre no se confunda con un producto comercial.
+- Confirmar con la mentoría el tono infantil de la marca y los requisitos de Sanofi sobre el uso de marca.

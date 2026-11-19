@@ -1,6 +1,6 @@
 # Ideas para RADIANT: detección de dermatitis atópica con IA
 
-Sin acceso a historias clínicas reales, el enfoque es convertir esa limitación en una ventaja: construir un sistema completo y riguroso con datos sintéticos, combinar varias fuentes de señal y evaluar con honestidad.hola
+Sin acceso a historias clínicas reales, el enfoque es convertir esa limitación en una ventaja: construir un sistema completo y riguroso con datos sintéticos, combinar varias fuentes de señal y evaluar con honestidad.
 
 ## 1. Datos sintéticos realistas en FHIR (la base)
 
